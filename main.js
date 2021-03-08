@@ -4,7 +4,7 @@ var canvas = document.getElementById("myCanvas");
 var CTX =canvas.getContext("2d");
 var color="black"
 var width_of_line=1;
-var radius=20
+
 
 canvas.addEventListener("mousedown",md);
 function md(e){
@@ -20,6 +20,7 @@ function mm(e){
     var current_position_of_x=e.clientX-canvas.offsetLeft;
     var current_position_of_y=e.clientY-canvas.offsetTop;
     if(mouseEvent=="mousedown"){
+        
         CTX.beginPath();
         CTX.strokeStyle=color;
         CTX.lineWidth=width_of_line;
